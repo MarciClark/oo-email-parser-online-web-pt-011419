@@ -8,7 +8,7 @@ class EmailParser
   end
   
   def parse 
-    emails.split.collect do |address|
+    array = emails.split.collect do |address|
       address.split(',')
     end
     binding.pry
